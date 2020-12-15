@@ -1,6 +1,6 @@
 <?php
 
-$games = [
+$matches = [
     'game 1' => [
         'home' => [
             'name' => 'lakers',
