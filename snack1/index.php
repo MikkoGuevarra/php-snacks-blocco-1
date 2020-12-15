@@ -27,6 +27,7 @@ var_dump($matches);
 
 for ($i=0; $i < count($matches) ; $i++) {
     echo $matches[$i]['home']['name']. " vs " .$matches[$i]['away']['name']. " || " .$matches[$i]['home']['score']. " - " .$matches[$i]['away']['score']."<br>";
+    //potrei usare acnhe nl2br e \n
 };
 
 
