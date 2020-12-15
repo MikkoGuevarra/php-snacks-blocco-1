@@ -1,7 +1,7 @@
 <?php
 
 $matches = [
-    'game 1' => [
+    [
         'home' => [
             'name' => 'lakers',
             'score' => rand(50, 130)
@@ -11,7 +11,7 @@ $matches = [
             'score' => rand(50, 130)
         ]
     ],
-    'game 2' => [
+    [
         'home' => [
             'name' => 'clippers',
             'score' => rand(50, 130)
@@ -23,16 +23,11 @@ $matches = [
     ]
 
 ];
-var_dump($games);
+var_dump($matches);
+
+for ($i=0; $i < count($matches) ; $i++) {
+    echo nl2br($matches[$i]['home']['name']. " vs " .$matches[$i]['away']['name']. " || " .$matches[$i]['home']['score']. " - " .$matches[$i]['away']['score']);
+};
+
 
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <h1>Nba season 2020/2021</h1>
-    </body>
-</html>
