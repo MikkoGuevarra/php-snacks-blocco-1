@@ -26,7 +26,7 @@ $matches = [
 var_dump($matches);
 
 for ($i=0; $i < count($matches) ; $i++) {
-    echo nl2br($matches[$i]['home']['name']. " vs " .$matches[$i]['away']['name']. " || " .$matches[$i]['home']['score']. " - " .$matches[$i]['away']['score']);
+    echo $matches[$i]['home']['name']. " vs " .$matches[$i]['away']['name']. " || " .$matches[$i]['home']['score']. " - " .$matches[$i]['away']['score']."<br>";
 };
 
 
